@@ -13,9 +13,9 @@ RUN apt-get install -y --allow-unauthenticated \
     build-essential \
     ccache \
     chrpath \
-    clang-9 \
-    clang-format-9 \
-    clang-tidy-9 \
+    clang-11 \
+    clang-format-11 \
+    clang-tidy-11 \
 	cmake \
 	libboost1.74-dev \
 	libboost-program-options1.74-dev \
