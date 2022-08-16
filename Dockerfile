@@ -10,7 +10,7 @@ RUN apt-get update
 
 RUN apt-get install -y --allow-unauthenticated \
     binutils-dev \
-    build-essential \
+    make \
     ccache \
     chrpath \
     clang-11 \
