@@ -109,6 +109,10 @@ RUN echo LANG=en_US.UTF-8 >> /etc/default/locale
 RUN mkdir -p /home/user
 RUN chmod 777 /home/user
 
+RUN sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/c++ 40
+RUN sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++-11 60
+RUN sudo update-alternatives --config c++
+
 EXPOSE 8080
 EXPOSE 8081
 EXPOSE 8082
